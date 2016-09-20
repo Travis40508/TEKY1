@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src = "https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link rel = "stylesheet" href = "list.css">
+  </head>
+  <body>
+    <button onclick = "addSong('response')">Add Song</button>
+    <div>
+      <p class = "list"></p>
+    </div> 
+    <script> 
+      var list = [];
+      function addSong (title) {
+        var response = prompt("What is your favorite Beatles song?");
+        $(".list").append(response) ;
+       
+      }
+      </script>
+  </body>
+</html>
